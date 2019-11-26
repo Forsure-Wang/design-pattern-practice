@@ -29,7 +29,7 @@ public class Main {
         float result = 0;
         Calculator calculator = new Calculator();
 
-        switch (operater) {
+        /*switch (operater) {
             case "+":
                 result = calculator.add(numberA, numberB);
                 System.out.println("the result is: " + result);
@@ -55,6 +55,9 @@ public class Main {
                 break;
             default:
                     System.out.println("pleas input operater in +,-,*,/");
-        }
+        }*/
+        result = calculator.getResult(numberA, numberB, operater);
+
+        System.out.println("the result is: " + result);
     }
 }
