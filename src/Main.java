@@ -24,9 +24,9 @@ public class Main {
             System.out.println("IO exception");
         }
 
-        float numberA = Float.parseFloat(strA);
-        float numberB = Float.parseFloat(strB);
-        float result = 0;
+        double numberA = Double.parseDouble(strA);
+        double numberB = Double.parseDouble(strB);
+        double result = 0;
         Calculator calculator = new Calculator();
 
         /*switch (operater) {
@@ -54,10 +54,15 @@ public class Main {
                 System.out.println("the result is: " + result);
                 break;
             default:
-                    System.out.println("pleas input operater in +,-,*,/");
+                    System.out.println("please input operater in +,-,*,/");
         }*/
-        result = calculator.getResult(numberA, numberB, operater);
+        try {
+            result = calculator.getResult(numberA, numberB, operater);
+            System.out.println("the result is: " + result);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
-        System.out.println("the result is: " + result);
+
     }
 }
