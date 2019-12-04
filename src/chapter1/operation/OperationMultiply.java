@@ -1,4 +1,4 @@
-package operation;
+package chapter1.operation;
 
 public class OperationMultiply extends Operation {
     public OperationMultiply() {

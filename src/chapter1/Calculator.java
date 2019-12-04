@@ -1,4 +1,6 @@
-import operation.*;
+package chapter1;
+
+import chapter1.operation.*;
 
 public class Calculator {
 

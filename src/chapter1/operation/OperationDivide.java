@@ -1,4 +1,4 @@
-package operation;
+package chapter1.operation;
 
 public class OperationDivide extends Operation {
     public OperationDivide() {

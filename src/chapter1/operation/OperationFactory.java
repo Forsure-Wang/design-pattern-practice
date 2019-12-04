@@ -1,4 +1,4 @@
-package operation;
+package chapter1.operation;
 
 public class OperationFactory {
     public static Operation createOperate (String operator){
@@ -15,7 +15,7 @@ public class OperationFactory {
                 break;
             case "/":
                 /*try {
-                    operation = new OperationDivide();
+                    chapter1.operation = new OperationDivide();
                 } catch (ArithmeticException e) {
                     //e.printStackTrace();
                     System.out.println("Error: " + e.getMessage());

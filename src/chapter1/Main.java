@@ -1,3 +1,5 @@
+package chapter1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,7 +16,7 @@ public class Main {
             System.out.println("input number A:");
             strA = stdin.readLine();
 
-            System.out.println("input Calculator:");
+            System.out.println("input chapter1.Calculator:");
             operater = stdin.readLine();
 
             System.out.println("input number B:");
