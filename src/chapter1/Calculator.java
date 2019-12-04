@@ -16,23 +16,23 @@ public class Calculator {
             case "+":
                 //result = add(numberA, numberB);
                 OperationAdd operationAdd = new OperationAdd(numberA, numberB);
-                result = operationAdd.GetResult();
+                result = operationAdd.getResult();
                 break;
             case "-":
                 //result = substract(numberA, numberB);
                 OperationSubstract operationSubstract = new OperationSubstract(numberA, numberB);
-                result = operationSubstract.GetResult();
+                result = operationSubstract.getResult();
                 break;
             case "*":
                 //result = multiply(numberA, numberB);
                 OperationMultiply operationMultiply = new OperationMultiply(numberA, numberB);
-                result = operationMultiply.GetResult();
+                result = operationMultiply.getResult();
                 break;
             case "/":
                 try {
                     //result = divide(numberA, numberB);
                     OperationDivide operationDivide = new OperationDivide(numberA, numberB);
-                    result = operationDivide.GetResult();
+                    result = operationDivide.getResult();
                 } catch (ArithmeticException e) {
                     //e.printStackTrace();
                     System.out.println("Error: " + e.getMessage());
@@ -51,7 +51,7 @@ public class Calculator {
         operation = OperationFactory.createOperate(operator);
         operation.setNumberA(numberA);
         operation.setNumberB(numberB);
-        result = operation.GetResult();
+        result = operation.getResult();
 
         return result;
     }

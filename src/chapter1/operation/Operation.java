@@ -28,7 +28,7 @@ public class Operation {
         this.numberB = numberB;
     }
 
-    public double GetResult() /*throws ArithmeticException*/{
+    public double getResult() /*throws ArithmeticException*/{
         double result = 0.0;
 
         return result;

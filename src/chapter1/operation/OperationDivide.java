@@ -9,7 +9,7 @@ public class OperationDivide extends Operation {
     }
 
     @Override
-    public double GetResult() /*throws ArithmeticException*/ {
+    public double getResult() /*throws ArithmeticException*/ {
         double zeroB = getNumberB();
 
         //exeption

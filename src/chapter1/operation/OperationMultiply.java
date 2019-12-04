@@ -9,7 +9,7 @@ public class OperationMultiply extends Operation {
     }
 
     @Override
-    public double GetResult() {
+    public double getResult() {
         double result = getNumberA() * getNumberB();
         return result;
     }
