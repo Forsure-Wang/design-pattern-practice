@@ -1,18 +1,16 @@
-import operation.OperationAdd;
-import operation.OperationDivide;
-import operation.OperationMultiply;
-import operation.OperationSubstract;
+import operation.*;
 
 public class Calculator {
+
     public double getResult(double numA, double numB, String opt) {
         // check the input
         double numberA = numA;
         double numberB = numB;
-        String operater = opt;
+        String operator = opt;
         double result = 0.0;
 
 
-        switch (operater) {
+        /*switch (operator) {
             case "+":
                 //result = add(numberA, numberB);
                 OperationAdd operationAdd = new OperationAdd(numberA, numberB);
@@ -24,7 +22,7 @@ public class Calculator {
                 result = operationSubstract.GetResult();
                 break;
             case "*":
-                //ltiply(numberA, numberB);
+                //result = multiply(numberA, numberB);
                 OperationMultiply operationMultiply = new OperationMultiply(numberA, numberB);
                 result = operationMultiply.GetResult();
                 break;
@@ -40,9 +38,18 @@ public class Calculator {
                 }
                 break;
             default:
-                System.out.println("pleas input operater in +,-,*,/");
-                throw new RuntimeException("Error: wrong operater");
-        }
+                System.out.println("pleas input operator in +,-,*,/");
+                throw new RuntimeException("Error: wrong operator");
+        }*/
+
+        //simple factory design pattern
+
+        //static method (createOperate) can be called independently without an object
+        Operation operation = null;
+        operation = OperationFactory.createOperate(operator);
+        operation.setNumberA(numberA);
+        operation.setNumberB(numberB);
+        result = operation.GetResult();
 
         return result;
     }

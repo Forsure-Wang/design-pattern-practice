@@ -1,6 +1,9 @@
 package operation;
 
 public class OperationAdd extends Operation {
+    public OperationAdd() {
+
+    }
 
     public OperationAdd(double numA, double numB) {
         super(numA, numB);

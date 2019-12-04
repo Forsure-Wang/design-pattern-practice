@@ -56,12 +56,15 @@ public class Main {
             default:
                     System.out.println("please input operater in +,-,*,/");
         }*/
-        try {
+        /*try {
             result = calculator.getResult(numberA, numberB, operater);
             System.out.println("the result is: " + result);
         } catch (Exception e) {
             System.out.println(e.getMessage());
-        }
+        }*/
+
+        result = calculator.getResult(numberA, numberB, operater);
+        System.out.println("the result is: " + result);
 
 
     }

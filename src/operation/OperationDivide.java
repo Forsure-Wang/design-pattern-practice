@@ -1,13 +1,15 @@
 package operation;
 
 public class OperationDivide extends Operation {
+    public OperationDivide() {
+    }
 
     public OperationDivide(double numA, double numB) {
         super(numA, numB);
     }
 
     @Override
-    public double GetResult() /*throws ArithmeticException*/{
+    public double GetResult() /*throws ArithmeticException*/ {
         double zeroB = getNumberB();
 
         //exeption

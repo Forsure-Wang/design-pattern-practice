@@ -1,6 +1,9 @@
 package operation;
 
 public class OperationSubstract extends Operation {
+    public OperationSubstract() {
+    }
+
     public OperationSubstract(double numA, double numB) {
         super(numA, numB);
     }
