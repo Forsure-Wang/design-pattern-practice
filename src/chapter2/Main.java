@@ -2,6 +2,7 @@ package chapter2;
 
 import chapter2.factory.simple.Price;
 import chapter2.factory.simple.PriceFactory;
+import chapter2.factory.strategy.PriceContext;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,8 +47,14 @@ public class Main {
         //totalPrice = discount.getResult();
 
 
-        Price priceObj = PriceFactory.createPriceStrategy(doublePrice, doubleAmount, strategy);
-        totalPrice = priceObj.getResult();
+        // Simple Factory Design Pattern,
+        // user need to be familiar with two Class Price and PriceFactory
+        //Price priceObj = PriceFactory.createPriceStrategy(doublePrice, doubleAmount, strategy);
+
+        // Strategy Design Pattern
+        // user need to know Class PriceContext only
+        PriceContext priceContext = new PriceContext(doublePrice, doubleAmount, strategy);
+        totalPrice = priceContext.getResult();
 
         System.out.println("Total price:" + totalPrice);
     }

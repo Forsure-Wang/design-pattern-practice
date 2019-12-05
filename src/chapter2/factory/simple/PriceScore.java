@@ -28,10 +28,11 @@ public class PriceScore extends Price {
 
     @Override
     public double getResult() {
-        double totalPrice = this.getResult();
+        double totalPrice = super.getResult();
         double totalScore = 0.0;
         if (totalPrice >= condition) {
             totalScore = totalPrice / condition * score;
+            System.out.println("Congratulations! you have gained " + totalScore + " score");
             //save total price into database;
         }
         return totalPrice;
