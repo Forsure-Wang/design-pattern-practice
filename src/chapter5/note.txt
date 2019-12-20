@@ -1,0 +1,19 @@
+
+The Single Responsibility Principle
+— Classes should have a single responsibility and thus only a single reason to change.
+
+The Open/Closed Principle
+— Classes and other entities should be open for extension but closed for modification.
+
+--->The Dependency Inversion Principle
+— High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. interfaces).
+  Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+
+--->The Liskov Substitution Principle
+— Objects should be replaceable by their subtypes.
+
+The Interface Segregation Principle
+— Interfaces should be client specific rather than general.
+
+The Dependency Inversion Principle
+— Depend on abstractions rather than concretions.
