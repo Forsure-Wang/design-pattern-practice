@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] arge) {
+    public static void main(String[] args) {
         System.out.println("Chapter 2 !!!");
 
         String strPrice = "";
